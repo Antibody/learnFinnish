@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+ <html lang="en">
+     
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="ru"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><!--<![endif]-->
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QGJHPSYCTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QGJHPSYCTQ');
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QGJHPSYCTQ"></script>
+<!-- Yandex tag  -->
+<meta name="yandex-verification" content="0969de7ef026307f" />
+
+   <!--- Basic Page Needs
+   ================================================== -->
+  
+ <!---  <meta charset="utf-8">  -->
+   <meta http-equiv="Content-Type" 
+      content="text/html; charset=utf-8">
+	<title>ChatGTP no registration</title>
+	<meta name="description" content="ChatGPT without registration">
+	 <meta name="keywords" content="ChatGPT without registration, ChatGPT no registration, ChatGPT no sign-up">
+	<meta name="author" content="Maxim">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a href="index.html">Home</a></li>
+      <!--      <li class="current"><a href="ChatGPT-sin-necesidad-de-registrarse.html">Español</a></li>
+			<li class="current"><a href="ChatGPT-bez-rejestracji.html">Polski</a></li>
+            <li class="current"><a href="ChatGPT-po-russki.html">Русский</a></li>
+            <li class="current"><a href="ChatGPT-in-chinese.html">中国人</a></li> 
+      -->
+	         
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+           <h1 class="responsive-headline">Learn Finnish with AI</h1>
+           <h3 style="text-align:justify;">Learn Finnish language by chatting with ChatGPT. I pre-trained&nbsp; GPT-3.5-turbo,&nbsp;a large computer model that works with language, to teach you Finnish. If the model detects a mistake in your text, it should reply with the corrected Finnish phrase preceded by [SUOMEA-OIKEIN] label. This will be followed by model's comments in English [ENG]. If everything was correct it would just continue conversation in Finnish language. This responce should be labelled by&nbsp;[SUOMEA tag.&nbsp; &nbsp; &nbsp; &nbsp; The model should always continue by asking you a question that will be labelled [KYS] as in "kysymys". In order to interact with "Learn Finnish with AI" app you would need OpenAI API key. Get one for free at <a href="https://platform.openai.com">OpenAI</a> (you would need a valid phone numer to register)</h3>
+           
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#resume"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+	   
+	   
+<div class="row">
+
+  <center>      <!-- Add this inside the <body> tag, preferably before the chat form -->
+<div>
+  <label for="api-key-input">Your OpenAI&nbsp; API Key:</label>
+  <input type="text" id="api-key-input" />
+  <button id="set-api-key">Set API Key</button>
+
+
+
+	</div></center>
+	</div>
+
+	   
+	   
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+		  
+		  <center><h2 style="color: darkcyan"><i>ChatGPT's answer will&nbsp; be below. Conversation history is at the page's end:</i></h2></center>
+		  <p>
+		  </p>
+   <div id="response-container" style="width: 100%; min-height: 50px; border: 1px solid #ccc; padding: 10px; box-sizing: border-box; background-color: #f8f8f8; white-space: pre-wrap; word-wrap: break-word;">
+	<p id="please-wait" style="display: none;">Please wait just a bit...</p>   
+    <p id="chatgpt-response" style="font-size: 24px; color: black;"></p>
+    
+</div>
+
+		  <div> <p></p></div>
+		  
+ <h2 style="text-align:center;">Your question (for moving to the next line use SHIFT+ENTER):</h2>
+    <form id="chat-form">
+      <label for="user-input"></label>
+      <textarea id="user-input" style="width: 100%; height: 100px;" required></textarea>
+        <center><button type="submit">Ask ChatGPT</button></center>
+		<center><h4>or press ENTER</h4></center>
+    </form>
+      
+      <p>
+		  </p>
+          <center> <h3 style="color: #005858"><i>Conversation history:</i></h3></center>
+ <!--   <div id="response-container">  -->
+   
+        <div id="conversation-history" style="width: 100%; min-height: 50px; border: 1px solid #ccc; padding: 10px; box-sizing: border-box; background-color: #f8f8f8; white-space: pre-wrap; word-wrap: break-word;"></div>
+		  <!-- Add this button within your "response-container" div -->
+           <p></p>
+             <center><button id="download-history">Download history</button></center>
+
+    </div>
+	   
+
+	</section>
+	
+	      <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <ul class="social">
+               <li>Contact me: </li>
+			<li><a href="mailto:GPTchatly@gmail.com"><i class="fa fa-envelope"></i></a></li>
+               <li><a href="https://forms.gle/txsjwFGLGsriBfni9"><i class="fa fa-google-plus"></i></a></li>
+              
+               
+            </ul>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2023 Maxim </li>
+               <li>Template by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+   <!-- Java Script
+   ================================================== -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="app_fin.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+ <!-- ... existing code ... -->
+
+<script>
+   // Get the conversation history element
+   const conversationHistory = document.querySelector('#conversation-history');
+ 
+   // Define the observer callback function
+   const observerCallback = (mutationsList, observer) => {
+  // Iterate through each mutation
+  mutationsList.forEach((mutation) => {
+    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+      // Hide the first div with border-bottom style
+      $('#conversation-history div[style="border-bottom: 1px solid #ccc;"]:first-of-type').hide();
+    }
+  });
+};
+   // Create the observer instance
+   const observer = new MutationObserver(observerCallback);
+ 
+   // Observe changes to the conversation history element
+   observer.observe(conversationHistory, { childList: true });
+ </script>
+ 
+
+</body>
+
+</html>
