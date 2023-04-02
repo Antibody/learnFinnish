@@ -133,7 +133,7 @@ async function getChatGPTResponse(past_conversations) {
 
 function downloadConversationHistory(past_conversations) {
     const fileName = 'conversation_history.txt';
-    const textContent = past_conversations.map(message => `${message.role}: ${message.content}`).join('\n');
+    const textContent = past_conversations.slice(1).map(message => `${message.role}: ${message.content}`).join('\n');
 
     const blob = new Blob([textContent], { type: 'text/plain;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
