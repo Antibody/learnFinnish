@@ -30,8 +30,8 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   height: 900px;
-   min-height: 900px;
+   height: 1000px;
+   min-height: 1000px;
    width: 100%;
    background: #161415 url(../images/header-background.jpg) no-repeat top center;
    background-size: cover !important;
@@ -51,7 +51,7 @@ header .banner {
    display: inline-block;
    vertical-align: middle;
    margin: 0 auto;
-   width: 85%;
+   width: 95%;
    padding-bottom: 30px;s
    text-align: center;
 }
@@ -76,7 +76,7 @@ header .banner-text h3 a {
    color: #fff;
 }
 header .banner-text hr {
-   width: 60%;
+   width: 85%;
    margin: 18px auto 24px auto;
    border-color: #2F2D2E;
    border-color: rgba(150, 150, 150, .1);
