@@ -106,7 +106,7 @@ async function getChatGPTResponse(past_conversations) {
 
     const headers = new Headers({
         'Content-Type': 'application/json',
-        'Authorization': `Bearer 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`,
+        'Authorization': `Bearer ${apiKey}`,
     });
 
     const body = JSON.stringify({
