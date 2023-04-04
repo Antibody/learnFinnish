@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+ <html lang="en">
+     
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJV68SGKRT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YJV68SGKRT');
+</script>
+
+<!-- Yandex tag  -->
+<meta name="yandex-verification" content="0cc1c3b23e36db67" />
+
+   <!--- Basic Page Needs
+   ================================================== -->
+  
+ <!---  <meta charset="utf-8">  -->
+   <meta http-equiv="Content-Type" 
+      content="text/html; charset=utf-8">
+	<title>Learn Finnish with ChatGPT</title>
+	<meta name="description" content="Learn Finnish with AI">
+	 <meta name="keywords" content="Learn finnish with ChatGPT">
+	<meta name="author" content="Maxim">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a href="index.html">ENGLISH</a></li>
+            <li class="current"><a href="instructions.html">Instructions</a></li>
+			<li class="current"><a href="https://gptchatly.com/learn-finnish-with-chatgpt.html">Limited Demo</a></li>
+			 
+			 
+	 <!-- 		<li class="current"><a href="ChatGPT-bez-rejestracji.html">Polski</a></li>
+            <li class="current"><a href="ChatGPT-po-russki.html">Русский</a></li>
+            <li class="current"><a href="ChatGPT-in-chinese.html">中国人</a></li> 
+      -->
+	         
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+           <h1 class="responsive-headline">Учите финский язык с ChatGPT</h1>
+           <h3 style="text-align:justify;">Изучайте финский язык, общаясь с ChatGPT. Я натренировал GPT-3.5-turbo, большую компьютерную модель, работающую с языком, учить вас финскому языку. Если модель обнаружит ошибку в вашем тексте, она должна ответить исправленной финской фразой, предваряемой пометкой [SUOMEA-OIKEIN]. После этого последуют комментарии модели на русском [РУС]. Если все было правильно, модель просто продолжит разговор на финском языке. Этот ответ должен быть помечен меткой [SUOMEA]. Модель всегда должна продолжать разговор, задавая вопрос, который будет помечен меткой [KYS], как в "kysymys". Для взаимодействия с приложением "Учим финский с ChatGPT" вам понадобится API-ключ OpenAI. Получить его можно бесплатно на сайте <a href="https://platform.openai.com">OpenAI</a>. Или попробуйте <a href="https://gptchatly.com/learn-finnish-with-chatgpt.html">ограниченную демо версию</a>с моими личными ключами </h3>
+           <div class="row">
+
+  <center>      <!-- Add this inside the <body> tag, preferably before the chat form -->
+<div>
+	<label for="api-key-input"><a href="https://platform.openai.com">Ваш ключ API OpenAI:</a></label>
+  <input type="text" id="api-key-input" />
+	<button id="set-api-key">Задать ключ API</button>
+	<p> Ваш ключ API будет выглядеть так: sk-DcaZNcHg3PhqqKIXqxWGT3BlcdFJfWJATytarCOHBjnzkaBq</p>
+	<label for="set-api-key"> <a href="instructions.html"><b>ИНСТРУКЦИИ (ENGLISH)</b></a></label>
+  
+
+
+
+	</div></center>
+	</div>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#resume"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+	   
+	   
+
+
+	   
+	   
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+		  
+		  <center><h2 style="color: darkcyan"><i>Ответ ChatGPT будет ниже. История разговора находится в конце страницы:</i></h2>
+		  <p>
+		  </p>
+   <div id="response-container" style="width: 90%; min-height: 50px; border: 1px solid #ccc; padding: 10px; box-sizing: border-box; background-color: #f8f8f8; white-space: pre-wrap; word-wrap: break-word;">
+	<p id="please-wait" style="display: none;">Пожалуйста, подождите немного...</p>   
+    <p id="chatgpt-response" style="font-size: 24px; color: black;"></p>
+    
+</div></center>
+
+		  <div> <p></p></div>
+		  
+<center><h2 style="text-align:center;">Ваш вопрос (для перехода на следующую строку используйте SHIFT+ENTER):</h2>
+    <form id="chat-form">
+      <label for="user-input"></label>
+      <textarea id="user-input" style="width: 90%; height: 100px;" required></textarea>
+        <button type="submit">Спросить ChatGPT</button>
+		<h4>или нажмите ENTER</h4>
+    </form></center>
+      
+      <p>
+		  </p>
+          <center> <h3 style="color: #005858"><i>История разговора:</i></h3>
+ <!--   <div id="response-container">  -->
+   <center><p>Если вы хотите продолжить следующий чат с того места, где закончили сегодняшний, вам необходимо скачать историю текущих разговоров. Затем, в следующий раз, откройте файл локально, скопируйте его содержимое и вставьте его в чат. Затем нажмите кнопку 'Спросить ChatGPT' или нажмите 'ENTER'.</p>
+   </center>
+        <div id="conversation-history" style="width: 90%; min-height: 50px; border: 1px solid #ccc; padding: 10px; box-sizing: border-box; background-color: #f8f8f8; white-space: pre-wrap; word-wrap: break-word;"></div>
+		  <!-- Add this button within your "response-container" div -->
+           <p></p>
+             <button id="download-history">История загрузки</button></center>
+
+    </div>
+	   
+
+	</section>
+	
+	      <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <ul class="social">
+               <li>Contact me: </li>
+			<li><a href="mailto:GPTchatly@gmail.com"><i class="fa fa-envelope"></i></a></li>
+               <li><a href="https://forms.gle/txsjwFGLGsriBfni9"><i class="fa fa-google-plus"></i></a></li>
+              
+               
+            </ul>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2023 Maxim </li>
+               <li>Template by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+   <!-- Java Script
+   ================================================== -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="app_fin.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+ <!-- ... existing code ... -->
+
+<script>
+   // Get the conversation history element
+   const conversationHistory = document.querySelector('#conversation-history');
+ 
+   // Define the observer callback function
+   const observerCallback = (mutationsList, observer) => {
+  // Iterate through each mutation
+  mutationsList.forEach((mutation) => {
+    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+      // Hide the first div with border-bottom style
+      $('#conversation-history div[style="border-bottom: 1px solid #ccc;"]:first-of-type').hide();
+    }
+  });
+};
+   // Create the observer instance
+   const observer = new MutationObserver(observerCallback);
+ 
+   // Observe changes to the conversation history element
+   observer.observe(conversationHistory, { childList: true });
+ </script>
+ 
+
+</body>
+
+</html>
