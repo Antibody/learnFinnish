@@ -4,7 +4,7 @@
     <loc>https://learnfinnish.ai/index.html</loc>
     <lastmod>2023-04-02</lastmod>
      <changefreq>monthly</changefreq>
-      <priority>0.6</priority>
+      <priority>0.29</priority>
   </url>
   
   
@@ -20,10 +20,15 @@
     <loc>https://learnfinnish.ai/uchit_finskij-na-russkom-s-chatgpt.html</loc>
     <lastmod>2023-04-02</lastmod>
      <changefreq>monthly</changefreq>
-      <priority>0.39</priority>
+      <priority>0.29</priority>
   </url>
   
 
-
+ <url>
+    <loc>https://learnfinnish.ai/ChatGPT-ile-Fince-ogrenin.html</loc>
+    <lastmod>2023-04-02</lastmod>
+     <changefreq>monthly</changefreq>
+      <priority>0.29</priority>
+  </url>
   
 </urlset>
