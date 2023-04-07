@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         const userInput = document.getElementById('user-input').value;
         submitInput(userInput);
+        document.getElementById('user-input').value = '';
     });
 
     const userInputElement = document.getElementById('user-input');

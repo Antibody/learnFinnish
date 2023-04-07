@@ -78,17 +78,17 @@
 
       <div class="row banner">
          <div class="banner-text">
-           <h1 class="responsive-headline">Learn Finnish with AI</h1>
-           <h3 style="text-align:justify;">Learn Finnish language by chatting with ChatGPT. I pre-trained GPT-3.5-turbo, a large computer model that works with language, to teach you Finnish. If the model detects a mistake in your text, it should reply with the corrected Finnish phrase preceded by [SUOMEA-OIKEIN] label. This will be followed by model's comments in English [ENG]. If everything was correct it would just continue conversation in Finnish language. This response should be labelled by [SUOMEA] tag. The model should always continue by asking you a question that will be labelled [KYS] as in "kysymys". In order to interact with "Learn Finnish with AI" app you would need an OpenAI API key. Get one for free at <a href="https://platform.openai.com">OpenAI</a> (<a href="instructions.html"><b>INSTRUCTIONS</b></a>). Or try <a href="https://gptchatly.com/learn-finnish-with-chatgpt.html">limited demo</a> with my own personal keys</h3>
+           <h1 class="responsive-headline">تعلم اللغة الفنلندية من خلال الدردشة مع ChatGPT</h1>
+           <h3 style="text-align:justify;">تعلم اللغة الفنلندية من خلال الدردشة مع ChatGPT. لقد قمت مسبقًا بتدريب GPT-3.5-turbo ، وهو نموذج كمبيوتر كبير يعمل مع اللغة ، لتعليمك اللغة الفنلندية. إذا اكتشف النموذج خطأً في النص الخاص بك ، فيجب أن يرد بالعبارة الفنلندية المصححة مسبوقة بعلامة [SUOMEA-OIKEIN]. ويلي ذلك تعليقات العارضة بالعربية [عربي]. إذا كان كل شيء صحيحًا ، فسيواصل المحادثة باللغة الفنلندية. يجب تصنيف هذا الرد بواسطة علامة [SUOMEA]. يجب أن يستمر النموذج دائمًا بطرح سؤال عليك يسمى [KYS] كما في "kysymys". للتفاعل مع Learn Finnish باستخدام تطبيق ChatGPT ، ستحتاج إلى مفتاح OpenAI API. احصل على واحد مجانًا على <a href="https://platform.openai.com"> OpenAI </a> (<a href="instructions.html"> <b> التعليمات </ b> </a>) . أو جرّب <a href="https://gptchatly.com/learn-finnish-with-chatgpt.html"> عرض توضيحي محدود </a> بمفاتيحي الشخصية</h3>
            <div class="row">
 
   <center>      <!-- Add this inside the <body> tag, preferably before the chat form -->
 <div>
-	<label for="api-key-input"><a href="https://platform.openai.com">Your OpenAI&nbsp; API Key:</a></label>
+	<label for="api-key-input"><a href="https://platform.openai.com">مفتاح OpenAI API الخاص بك:</a></label>
   <input type="text" id="api-key-input" />
-	<button id="set-api-key">Set API Key</button>
-	<p> Your API key would look like: sk-DcaZNcHg3PhqqKIXqxWGT3BlcdFJfWJATytarCOHBjnzkaBq</p>
-	<label for="set-api-key"> <a href="instructions.html"><b>INSTRUCTIONS</b></a></label>
+	<button id="set-api-key">تعيين مفتاح API</button>
+	<p>sk-DcaZNcHg3PhqqKIXqxWGT3BlcdFJfWJATytarCOHBjnzkaBq سيبدو مفتاح API الخاص بك كما يلي sk-DcaZNcHg3PhqqKIXqxWGT3BlcdFJfWJATytarCOHBjnzkaBq</p>
+	<label for="set-api-key"> <a href="instructions.html"><b>التعليمات (باللغة الإنجليزية)</b></a></label>
   
 
 
@@ -121,18 +121,18 @@
       ----------------------------------------------- -->
       <div class="row work">
 		  
-		  <center><h2 style="color: darkcyan"><i>ChatGPT's answer will&nbsp; be below. Conversation history is belower ;)</i></h2>
+		  <center><h2 style="color: darkcyan"><i>ستكون إجابة ChatGPT أدناه. تاريخ المحادثة في نهاية الصفحة </i></h2>
 		  <p>
 		  </p>
    <div id="response-container" style="width: 90%; min-height: 50px; border: 1px solid #ccc; padding: 10px; box-sizing: border-box; background-color: #f8f8f8; white-space: pre-wrap; word-wrap: break-word;">
-	<p id="please-wait" style="display: none;">Please wait just a bit...</p>   
+	<p id="please-wait" style="display: none;">من فضلك انتظر قليلا ...</p>   
     <p id="chatgpt-response" style="font-size: 24px; color: black;"></p>
     
 </div></center>
 
 		  <div> <p></p></div>
 		  
-<center><h2 style="text-align:center;">A place for your text is just below. For a good start say: Moi! </h2>
+<center><h2 style="text-align:center;">مكان للنص الخاص بك أدناه. لبداية جيدة قل: موي! </h2>
     <form id="chat-form">
       <label for="user-input"></label>
       <textarea id="user-input" style="width: 90%; height: 100px;" required></textarea>
