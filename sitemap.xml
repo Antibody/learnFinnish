@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://learnfinnish.ai/index.html</loc>
-    <lastmod>2023-04-02</lastmod>
+    <lastmod>2023-04-11</lastmod>
      <changefreq>monthly</changefreq>
-      <priority>0.29</priority>
+      <priority>0.25</priority>
   </url>
   
   
@@ -12,7 +12,7 @@
     <loc>https://learnfinnish.ai/instructions.html</loc>
     <lastmod>2023-04-02</lastmod>
      <changefreq>monthly</changefreq>
-      <priority>0.0001</priority>
+      <priority>0.01</priority>
       
   </url>
 
@@ -20,7 +20,7 @@
     <loc>https://learnfinnish.ai/uchit_finskij-na-russkom-s-chatgpt.html</loc>
     <lastmod>2023-04-02</lastmod>
      <changefreq>monthly</changefreq>
-      <priority>0.29</priority>
+      <priority>0.24</priority>
   </url>
   
 
@@ -28,7 +28,16 @@
     <loc>https://learnfinnish.ai/ChatGPT-ile-Fince-ogrenin.html</loc>
     <lastmod>2023-04-02</lastmod>
      <changefreq>monthly</changefreq>
-      <priority>0.29</priority>
+      <priority>0.24</priority>
   </url>
   
+<url>
+    <loc>https://learnfinnish.ai/ChatGPT-suomeksi-Suomi-chatgpt.html
+</loc>
+    <lastmod>2023-04-02</lastmod>
+     <changefreq>monthly</changefreq>
+      <priority>0.24</priority>
+  </url>
+
+
 </urlset>
