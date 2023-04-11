@@ -17,6 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
      window.addEventListener('beforeunload', () => {
       localStorage.removeItem('past_conversations');
     });
+// Clear conversation history on browser close and on reload
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+          localStorage.removeItem('past_conversations');
+        }
+      });
+      
 
     // Update the conversation history on page load if there are any past conversations
     if (past_conversations.length > 0) {
@@ -73,28 +80,45 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('tokenCounter', tokenCounter);
         past_conversations.push({ role: 'user', content: userInput });
         localStorage.setItem('past_conversations', JSON.stringify(past_conversations));
-
+    
         if (!defaultPrompt) {
             const pleaseWait = document.getElementById('please-wait');
             const chatGPTResponseElement = document.getElementById('chatgpt-response');
             const conversationHistory = document.getElementById('conversation-history');
-
+    
             pleaseWait.style.display = 'block';
             chatGPTResponseElement.innerText = '';
-
+    
             try {
                 const chatGPTResponse = await getChatGPTResponse(past_conversations);
-                past_conversations.push({ role: 'assistant', content: chatGPTResponse });
+                past_conversations.push({ role: 'mwalimu', content: chatGPTResponse });
                 localStorage.setItem('past_conversations', JSON.stringify(past_conversations));
                 chatGPTResponseElement.innerText = chatGPTResponse;
                 updateConversationHistory(conversationHistory, past_conversations);
             } catch (error) {
-                chatGPTResponseElement.innerText = 'Error: Could not fetch the response.';
+                // Handle the 'API Key not set' error
+                if (error.message === 'API Key not set.') {
+                    alert('API Key not set. Please set the API key before submitting.');
+                    chatGPTResponseElement.innerText = 'Error: API Key not set.';
+                } else {
+                    // Check for specific status codes and display relevant messages
+                    const statusCode = error.message.split(' ')[1]; // Extract the status code from the error message
+                    switch (parseInt(statusCode)) {
+                        case 401:
+                            chatGPTResponseElement.innerText = 'Error: API key is wrong or it was revoked.';
+                            break;
+                        // Add more cases for other status codes if needed
+                        default:
+                            chatGPTResponseElement.innerText = 'Error: Could not fetch the response.';
+                            break;
+                    }
+                }
             } finally {
                 pleaseWait.style.display = 'none';
             }
         }
     }
+    
 });
 
 async function getChatGPTResponse(past_conversations) {
@@ -127,7 +151,7 @@ async function getChatGPTResponse(past_conversations) {
         const assistantMessage = data.choices[0].message;
         return assistantMessage ? assistantMessage.content.trim() : '';
     } else {
-        throw new Error(`Error: ${response. Status}`);
+        throw new Error(`Error: ${response.status}`);
     }
 }
 
