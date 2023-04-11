@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
             try {
                 const chatGPTResponse = await getChatGPTResponse(past_conversations);
-                past_conversations.push({ role: 'mwalimu', content: chatGPTResponse });
+                past_conversations.push({ role: 'assistant', content: chatGPTResponse });
                 localStorage.setItem('past_conversations', JSON.stringify(past_conversations));
                 chatGPTResponseElement.innerText = chatGPTResponse;
                 updateConversationHistory(conversationHistory, past_conversations);
